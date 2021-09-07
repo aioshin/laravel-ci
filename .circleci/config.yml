@@ -8,7 +8,7 @@ jobs:
       - run: sudo composer self-update --1
       - run: composer install -n --prefer-dist
       - run: npm ci
-      - run: npn run dev
+      - run: npm run dev
       - run:
           name: php test
           command: vender/bin/phpunit
